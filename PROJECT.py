@@ -175,7 +175,7 @@ df_deathstot = df_deathstot.groupby("Country")["Deaths from Covid-19 per 100,000
 sns.set_style("darkgrid")
 plt.figure(figsize=(10, 10))
 ax = sns.barplot(df_deathstot.values, df_deathstot.index)
-ax.set_xlabel("Confirmed cases per 100,000")
+ax.set_xlabel("Deaths from Covid-19 per 100,000")
 ax.set_ylabel("Country")
 ax.set_title("Total Deaths from Covid-19 per 100,000")
 plt.show()
